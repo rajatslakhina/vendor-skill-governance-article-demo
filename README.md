@@ -1,6 +1,6 @@
 # SkillPolicy
 
-**Xcode 27 ships seven agent skills. `xcrun agent skills export` drops them into `~/.agents/skills`, where Claude Code, Codex and Cursor read them. That makes Apple a contributor to your coding standard — one whose commits nobody on your team reviews.**
+**Xcode 27 ships seven agent skills. `xcrun agent skills export ~/.agents/skills` writes them to a path you choose, and the path everyone chooses is the one Claude Code, Codex and Cursor already read. That makes Apple a contributor to your coding standard — one whose commits nobody on your team reviews.**
 
 `SkillPolicy` is a small, runnable library that treats an installed skill set the way you'd treat any other dependency: resolve it, check what can actually run, decide which rule wins each subject, and produce an audit trail you can read in review.
 
