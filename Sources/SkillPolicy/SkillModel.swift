@@ -23,9 +23,9 @@ public enum SkillOrigin: String, Sendable, Codable, CaseIterable {
 
 /// A capability a skill needs from whatever harness is executing it.
 ///
-/// Apple's knowledge-driven skills only read and edit source, so they travel
-/// to any harness. The tool-driven ones reach for Xcode-specific machinery and
-/// quietly stop working outside it.
+/// Some skills never touch anything but source text, which is why they behave
+/// identically wherever they run. Others want the project model, and a harness
+/// that cannot offer it turns them into dead weight without announcing it.
 public enum HarnessCapability: String, Sendable, Codable, CaseIterable, Comparable {
     case readSource
     case editSource

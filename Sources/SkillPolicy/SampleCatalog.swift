@@ -1,10 +1,12 @@
 /// A worked example: Apple's seven Xcode 27 skills, plus the house and repo
 /// skills a team would realistically layer on top of them.
 ///
-/// The rule text is paraphrased and deliberately opinionated — the point of
-/// the catalog is to make the *collisions* concrete, not to reproduce Apple's
-/// wording. Capability requirements follow the real split: knowledge-driven
-/// skills only read and edit source, tool-driven ones reach for Xcode.
+/// The rule text is invented and deliberately opinionated — the point of the
+/// catalog is to make the *collisions* concrete, not to reproduce Apple's
+/// wording. The capability requirements are a modelling choice too: skills that
+/// work purely on source text ask only for source capabilities, while the two
+/// that want Xcode's project model ask for build-settings or device access.
+/// The three non-vendor skills are fictional stand-ins for house conventions.
 public enum SampleCatalog {
 
     // MARK: - Vendor: shipped in Xcode 27, exported to ~/.agents/skills
