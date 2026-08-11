@@ -5,7 +5,8 @@
 /// toolchain, it changes when Apple decides, and nobody on your team reviews
 /// the diff. A `.house` or `.repo` skill is yours.
 public enum SkillOrigin: String, Sendable, Codable, CaseIterable {
-    /// Shipped inside Xcode 27, exported with `xcrun agent skills export`.
+    /// Shipped inside Xcode 27, exported with
+    /// `xcrun agent skills export ~/.agents/skills`.
     case vendor
     /// Written by your org, applied across every repository.
     case house
